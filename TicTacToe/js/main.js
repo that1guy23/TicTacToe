@@ -40,11 +40,12 @@ function checkWin(){
         
         //Diagonal Check
         ((topLeft.value == middleMiddle.value) && (middleMiddle.value == bottomRight.value)) ||
-        ((topRight.value == middleMiddle.value) && (middleMiddle.value == bottomLeft.value)) ||
+        ((topRight.value == middleMiddle.value) && (middleMiddle.value == bottomLeft.value))
     ){
         return true;
-    }
+    } else {
     return false;
+    }
 }
 
 document.querySelector('#startGame').addEventListener('click', startGame())
