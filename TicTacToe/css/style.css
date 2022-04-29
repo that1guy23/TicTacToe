@@ -1,42 +1,75 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
 /******************************************
-/* BASE STYLES
+/* CSS
 /*******************************************/
 
-body {
-
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 header {
-
+  height: 100px;
+  clear: both;
 }
 
-footer {
 
+.Boxes{
+  height: 200px;
+  width: 33.333%;
+  float: left;
 }
 
+#TopLeft{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#TopMiddle{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+ 
+}
+
+#TopRight{
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#LeftMiddle{
+  border-bottom: 2px solid black;
+}
+
+#MiddleMiddle{
+
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#RightMiddle{
+  border-bottom: 2px solid black;
+  
+  border-top: 2px solid black;
+}
+
+#BottomLeft{
+
+  border-right: 2px solid black;
+}
+
+#BottomMiddle{
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#BottomRight{
+ 
+  border-left: 2px solid black;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
