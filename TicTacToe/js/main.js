@@ -14,3 +14,8 @@ function gameEnd(player){
     alert(`Congrats player ${player} you have won!`)
     document.querySelector('#startGame').addEventListener('click', startGame())
 }
+
+function gameEnd(player){
+    alert(`Congrats player ${player} you have won!`)
+    document.querySelector('#startGame').addEventListener('click', startGame())
+}
