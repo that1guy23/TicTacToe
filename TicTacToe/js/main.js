@@ -27,35 +27,23 @@ function checkWin(){
     const bottomRight = document.getElementById("#BottomRight");
 
     //Row Check
-    if ((topLeft.value == topMiddle.value) && (topMiddle.value == topRight.value)){
+    if(
+        //Row Check
+        ((topLeft.value == topMiddle.value) && (topMiddle.value == topRight.value)) ||
+        ((leftMiddle.value == middleMiddle.value) && (middleMiddle.value == rightMiddle.value)) ||
+        ((bottomLeft.value == bottomMiddle.value) && (bottomMiddle.value == bottomRight.value)) ||
+        
+        //Column Check
+        ((topLeft.value == leftMiddle.value) && (leftMiddle.value == bottomLeft.value)) ||
+        ((topMiddle.value == middleMiddle.value) && (middleMiddle.value == bottomMiddle.value)) ||
+        ((topRight.value == rightMiddle.value) && (rightMiddle.value == bottomRight.value)) ||
+        
+        //Diagonal Check
+        ((topLeft.value == middleMiddle.value) && (middleMiddle.value == bottomRight.value)) ||
+        ((topRight.value == middleMiddle.value) && (middleMiddle.value == bottomLeft.value)) ||
+    ){
         return true;
     }
-    if ((leftMiddle.value == middleMiddle.value) && (middleMiddle.value == rightMiddle.value)){
-        return true;
-    }
-    if ((bottomLeft.value == bottomMiddle.value) && (bottomMiddle.value == bottomRight.value)){
-        return true;
-    }
-
-    //Column Check
-    if ((topLeft.value == leftMiddle.value) && (leftMiddle.value == bottomLeft.value)){
-        return true;
-    }
-    if ((topMiddle.value == middleMiddle.value) && (middleMiddle.value == bottomMiddle.value)){
-        return true;
-    }
-    if ((topRight.value == rightMiddle.value) && (rightMiddle.value == bottomRight.value)){
-        return true;
-    }
-
-    //Diagonal Check
-    if((topLeft.value == middleMiddle.value) && (middleMiddle.value == bottomRight.value)){
-        return true
-    }
-    if ((topRight.value == middleMiddle.value) && (middleMiddle.value == bottomLeft.value)){
-        return true;
-    }
-
     return false;
 }
 
