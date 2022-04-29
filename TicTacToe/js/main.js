@@ -53,3 +53,7 @@ function startGame(){
     alert('Player 1 goes first! You are X!')
     playerTurn("X")
 }
+
+function addMark(player){
+    this.innerText? this.innerText==player : playerTurn(player)
+}
